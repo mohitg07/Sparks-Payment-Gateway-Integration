@@ -1,0 +1,86 @@
+.bg-image {
+  background-image: url('../images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.tagline {
+  font-family: 'Lobster', cursive;
+  margin-top: -5px;
+  font-size: 22px;
+}
+
+.logo-heading {
+  text-align: center;
+}
+
+.donation {
+  text-align: center;
+  width: 49%;
+  margin: 75px auto 0px;
+}
+
+.donation p {
+  font-family: 'Anton', sans-serif;
+  font-size: 22px;
+}
+
+hr {
+  width: 30%;
+  margin: 16px auto 16px;
+  height: 3px !important;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+    ms-transform: rotateY(0deg); //Microsoft Browsers
+  }
+
+  to {
+    transform: rotateY(360deg);
+    ms-transform: rotateY(360deg); //Microsoft Browsers
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotateY(0deg);
+  }
+
+  to {
+    -webkit-transform: rotateY(360deg);
+  }
+}
+
+.imageSpin {
+  animation-name: spin;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  -webkit-animation-name: spin;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 5s;
+}
+
+@media screen and (max-device-width: 900px) {
+  .bg-image {
+    background-image: url('../images/bg6.png');
+  }
+
+  hr {
+    width: 50%;
+  }
+}
+
+@media screen and (max-device-width: 500px) {
+  .donation {
+    width: 65%;
+  }
+
+  .bg-image {
+    background-image: url('../images/background.png');
+  }
+}
